@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* border: 2px;
+  border-color: rgb(126, 126, 190);
+  border-style: solid; */
+  /* background-color: aquamarine; */
+}
+
+:root {
+  /* font size */
+  --fs-200: 0.8125rem; /* 13px */
+  --fs-300: 0.875rem; /* 14px */
+  --fs-400: 0.9375rem; /* 15px */
+  --fs-700: 2.5rem; /* 40px */
+
+  /* font weight */
+  --fw-semi-bold: 400;
+  --fw-bold: 700;
+
+  /* colors */
+
+  --clr-bright: hsl(31, 77%, 52%);
+  --clr-dark: hsl(184, 100%, 22%);
+  --clr-very-dark: hsl(179, 100%, 13%);
+
+  --clr-very-light: hsla(0, 0%, 100%); /* text */
+
+  --clr-txt-normal: hsl(0, 0%, 95%, 1); /* background, headings, buttons */
+
+  /* font family */
+
+  --ff-header: "Big Shoulders Display", cursive;
+  --ff-body: "Lexend Deca", sans-serif;
+}
+
+.header {
+  font-family: var(--ff-header);
+  font-size: var(--fs-700);
+  color: var(--clr-very-light);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+p {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+  color: var(--clr-very-light);
+  line-height: 25px;
+  opacity: 0.75;
+}
+
+button {
+  border-radius: 75px;
+  color: var(--clr-bright);
+  border: none;
+  background-color: var(--clr-txt-normal);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+  height: 48px;
+  width: 150px;
+  margin-top: 45px;
+}
+
+button:hover,
+button:active {
+  cursor: pointer;
+  border-style: solid;
+  border-color: var(--clr-txt-normal);
+  background-color: transparent;
+  color: var(--clr-txt-normal);
+}
+
+img {
+  margin-top: 48px;
+  margin-bottom: 33px;
+  height: 40px;
+  width: 63px;
+}
+
+.column-1 {
+  background-color: var(--clr-bright);
+  justify-content: center;
+  border-radius: 8px;
+  height: 442px;
+}
+
+.column-2 {
+  background-color: var(--clr-dark);
+  border-radius: 8px;
+  height: 442px;
+}
+
+.column-3 {
+  background-color: var(--clr-very-dark);
+  border-radius: 8px;
+  height: 442px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 442px);
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  align-items: stretch;
+}
+
+.c-items {
+  margin-left: 38px;
+  margin-right: 45px;
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 307px);
+    grid-template-rows: 500px;
+    margin-left: 48px;
+    margin-top: 155px;
+  }
+
+  .column-1,
+  .column-2,
+  .column-3 {
+    height: 500px;
+    width: 307px;
+  }
+
+  .c-items {
+    margin-left: 38px;
+    margin-right: 55px;
+  }
+}
