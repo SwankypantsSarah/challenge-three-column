@@ -53,8 +53,8 @@ p {
 }
 
 button {
+  font-family: var(--ff-body);
   border-radius: 75px;
-  color: var(--clr-bright);
   border: none;
   background-color: var(--clr-txt-normal);
   text-align: center;
@@ -73,6 +73,15 @@ button:active {
   border-color: var(--clr-txt-normal);
   background-color: transparent;
   color: var(--clr-txt-normal);
+}
+.luxury-button {
+  color: var(--clr-very-dark);
+}
+.SUV-button {
+  color: var(--clr-dark);
+}
+.sedan-button {
+  color: var(--clr-bright);
 }
 
 img {
