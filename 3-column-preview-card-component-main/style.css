@@ -129,7 +129,7 @@ aside {
 @media screen and (min-width: 376px) {
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 307px);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: 500px;
     margin-left: 48px;
     margin-top: 155px;
