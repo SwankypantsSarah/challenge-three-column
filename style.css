@@ -91,6 +91,12 @@ img {
   width: 63px;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 442px);
+  justify-content: center;
+}
+
 .column-1 {
   background-color: var(--clr-bright);
   justify-content: center;
@@ -106,14 +112,8 @@ img {
 
 .column-3 {
   background-color: var(--clr-very-dark);
-  border-radius: 8px;
+  border-radius: 0 8px 8px 0;
   height: 442px;
-}
-
-.container {
-  display: grid;
-  grid-template-rows: repeat(3, 442px);
-  justify-content: center;
 }
 
 aside {
@@ -126,7 +126,7 @@ aside {
   margin-right: 45px;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 440px) {
   .container {
     display: grid;
     grid-template-columns: repeat(3, auto);
